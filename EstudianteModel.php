@@ -44,4 +44,20 @@ class Estudiante
       
     }
 
+    public function FiltrarEstudiante($id)
+    {
+      $nuevaConexion = new conexion();
+      $nuevoComando = $nuevaConexion->Conectar();
+      $resultado = $nuevoComando->query("Select * from Estudiantes where idEstudiante=$id");
+      return $resultado;
+    }
+
+    public function EditarEstudiante($id,$apel,$nom,$dir,$tel)
+    {
+      $nuevaConexion = new conexion();
+      $nuevoComando = $nuevaConexion->Conectar();
+      $nuevoComando->query("Update Estudiantes set apellidos="."'".$apel."',nombre="."'".$nom."',direccion="."'".$dir."',telefono="."'".$tel."'"." where idEstudiante = $id");
+    }
+
+
 }

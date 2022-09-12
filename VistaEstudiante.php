@@ -68,7 +68,7 @@
                     <td>  <?php echo $Estudiantes['direccion'] ?> </td>
                     <td>  <?php echo $Estudiantes['telefono'] ?> </td>
                     <td style="text-align: center;">
-                    <a href="editarEstudiante.html"><img alt="Editar" src="IconoEditar.png">
+                    <a href="VistaEditarEstudiante.php?idEst=<?php echo $Estudiantes['idEstudiante'];?>"><img alt="Editar" src="IconoEditar.png">
                     </td>
                     <td style="text-align: center;">
                     <a href="eliminarEstudiante.html"><img alt="Eliminar" src="IconoEliminar.png">
