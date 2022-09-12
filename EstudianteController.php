@@ -12,7 +12,7 @@ if(isset($_POST['btnGuardar']))
 else
 if(isset($_POST['btnEditar']))
 {
- $nuevoEstudiante->EditarEstudiante($_POST['idStudent'],$_POST['txtapellidos'],$_POST['txtnombre'],$_POST['txtssdireccion'],$_POST['txttelefono']); 
+ $nuevoEstudiante->EditarEstudiante($_POST['idStudent'],$_POST['txtapellidos'],$_POST['txtnombre'],$_POST['txtdireccion'],$_POST['txttelefono']); 
  header('Location: vistaEstudiante.php');
         
 }
