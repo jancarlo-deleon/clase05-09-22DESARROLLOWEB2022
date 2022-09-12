@@ -38,7 +38,7 @@
                 </p>
                 
                 <p align="center">
-                    <input type="submit" value="Guardar Registro"  class="btn btn-dark" >
+                    <input type="submit" value="Guardar Registro" name="btnGuardar"  class="btn btn-dark" >
                 </p>
             </form>
         </div>
