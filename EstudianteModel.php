@@ -59,5 +59,15 @@ class Estudiante
       $nuevoComando->query("Update Estudiantes set apellidos="."'".$apel."',nombre="."'".$nom."',direccion="."'".$dir."',telefono="."'".$tel."'"." where idEstudiante = $id");
     }
 
+      /*ELIMINAR REGISTRO*/
+
+      public function EliminarEstudiante($id)
+    {
+      $nuevaConexion = new conexion();
+      $nuevoComando = $nuevaConexion->Conectar();
+      $nuevoComando->query("Delete from Estudiantes where idEstudiante=$id");
+    }
+      
+
 
 }

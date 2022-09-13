@@ -71,7 +71,7 @@
                     <a href="VistaEditarEstudiante.php?idEst=<?php echo $Estudiantes['idEstudiante'];?>"><img alt="Editar" src="IconoEditar.png">
                     </td>
                     <td style="text-align: center;">
-                    <a href="eliminarEstudiante.html"><img alt="Eliminar" src="IconoEliminar.png">
+                    <a href="VistaEliminarEstudiante.php?idEst=<?php echo $Estudiantes['idEstudiante'];?>"><img alt="Eliminar" src="IconoEliminar.png">
                     </td>
             </tr>
             

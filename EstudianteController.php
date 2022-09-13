@@ -17,4 +17,13 @@ if(isset($_POST['btnEditar']))
         
 }
 
+/*ELIMINAR*/
+else
+if(isset($_POST['btnEliminar'])){
+$nuevoEstudiante->EliminarEstudiante($_POST['idStudiante']);
+header('Location: VistaEstudiante.php');
+}
+
+
+
 
